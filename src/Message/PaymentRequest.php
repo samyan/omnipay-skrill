@@ -932,7 +932,7 @@ class PaymentRequest extends AbstractRequest
 
         if (is_array($amountDescriptions)) {
             $counter = 2;
-        
+
             foreach ($amountDescriptions as $description => $amount) {
                 $data['amount' . $counter . '_description'] = $description;
                 $data['amount' . $counter] = $amount;
@@ -966,7 +966,10 @@ class PaymentRequest extends AbstractRequest
      */
     public function sendData($data)
     {
-        $httpResponse = $this->httpClient->request('POST', $this->getEndpoint(), [], http_build_query($data, '', '&'));
+        $httpResponse = $this->httpClient->request('POST', $this->getEndpoint(), [
+            'Accept' => 'application/json',
+            'Content-Type' => 'application/json',
+        ], json_encode($data));
 
         return $this->response = new PaymentResponse($this, $httpResponse);
     }

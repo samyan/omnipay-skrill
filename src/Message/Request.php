@@ -56,7 +56,7 @@ abstract class Request extends AbstractRequest
      */
     public function sendData($data)
     {
-        $httpResponse = $this->httpClient->request('GET', $this->getEndpoint(), [], http_build_query($data));
+        $httpResponse = $this->httpClient->request('GET', $this->getEndpoint() . '?' . http_build_query($data));
         $xml = simplexml_load_string($httpResponse->getBody()->getContents());
 
         return $this->createResponse($xml);
