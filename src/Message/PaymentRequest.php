@@ -968,7 +968,7 @@ class PaymentRequest extends AbstractRequest
     {
         $httpResponse = $this->httpClient->request('POST', $this->getEndpoint(), [], http_build_query($data, '', '&'));
 
-        return $this->response = new PaymentResponse($this, $httpResponse->getBody()->getContents());
+        return $this->response = new PaymentResponse($this, $httpResponse);
     }
 
     /**

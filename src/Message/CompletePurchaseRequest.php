@@ -35,6 +35,24 @@ class CompletePurchaseRequest extends AbstractRequest
     }
 
     /**
+     * @return string|null
+     */
+    public function getEmail()
+    {
+        return $this->getParameter('email');
+    }
+
+    /**
+     * @param string $value
+     *
+     * @return self
+     */
+    public function setEmail($value)
+    {
+        return $this->setParameter('email', $value);
+    }
+
+    /**
      * Get the data for this request.
      *
      * @return array request data

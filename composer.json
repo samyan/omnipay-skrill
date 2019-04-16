@@ -26,21 +26,23 @@
             "Omnipay\\Skrill\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Omnipay\\Skrill\\": "src/"
-        }
-    },
     "require": {
-        "omnipay/common": "^3"
+        "omnipay/common": "^3.0"
     },
     "require-dev": {
-        "omnipay/tests": "^3"
+        "omnipay/tests": "^3.0",
+        "squizlabs/php_codesniffer": "3.*",
+        "phpro/grumphp": "^0.14.3"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
     },
     "prefer-stable": true
 }
