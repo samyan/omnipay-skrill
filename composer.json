@@ -1,0 +1,46 @@
+{
+    "name": "samyan/omnipay-skrill",
+    "type": "library",
+    "description": "Skrill driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "skrill",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/SamYan/omnipay-skrill",
+    "license": "MIT",
+    "authors": [{
+            "name": "Joao Dias",
+            "email": "joao.dias@cherrygroup.com"
+        },
+        {
+            "name": "SamYan",
+            "email": "luvel88@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Skrill\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnipay\\Skrill\\": "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    },
+    "prefer-stable": true
+}
