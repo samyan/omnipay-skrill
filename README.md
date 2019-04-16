@@ -1,6 +1,11 @@
 # Omnipay: Skrill
 
 **Skrill driver for the Omnipay PHP payment processing library**
+[![Build Status](https://travis-ci.org/samyan/omnipay-skrill.svg?branch=master)](https://travis-ci.org/samyan/omnipay-skrill)
+[![Latest Stable Version](https://poser.pugx.org/samyan/omnipay-skrill/version)](https://packagist.org/packages/samyan/omnipay-skrill)
+[![Total Downloads](https://poser.pugx.org/samyan/omnipay-skrill/downloads)](https://packagist.org/packages/samyan/omnipay-skrill)
+[![Latest Unstable Version](https://poser.pugx.org/samyan/omnipay-skrill/v/unstable)](//packagist.org/packages/samyan/omnipay-skrill)
+[![License](https://poser.pugx.org/samyan/omnipay-skrill/license)](https://packagist.org/packages/samyan/omnipay-skrill)
 
 [Omnipay](https://github.com/omnipay/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements Skrill support for Omnipay.
