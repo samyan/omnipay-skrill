@@ -401,6 +401,7 @@ class StatusCallback extends AbstractResponse
 
     /**
      * @return string
+     * @phpcs:disable Generic.Files.LineLength
      */
     public function getMessage()
     {
