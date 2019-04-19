@@ -17,6 +17,7 @@ use Omnipay\Common\Message\AbstractResponse;
  * @copyright 2013-2014 Cherry Ltd.
  * @license   http://opensource.org/licenses/mit-license.php MIT
  * @version   6.19 Merchant Integration Manual
+ * @phpcs:disable Generic.Files.LineLength
  */
 class StatusCallback extends AbstractResponse
 {
@@ -401,7 +402,6 @@ class StatusCallback extends AbstractResponse
 
     /**
      * @return string
-     * @phpcs:disable Generic.Files.LineLength
      */
     public function getMessage()
     {
