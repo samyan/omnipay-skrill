@@ -404,9 +404,9 @@ class StatusCallback extends AbstractResponse
      */
     public function getMessage()
     {
-        // phpcs:disable Generic.Files.LineLength
         if (!$this->testMdSignatures()) {
-            return "MD5 signature {$this->calculateMd5Signature()} ({$this->data['secretWord']}) doesn't match {$this->getMd5Signature()}";
+            return "MD5 signature {$this->calculateMd5Signature()} 
+                    ({$this->data['secretWord']}) doesn't match {$this->getMd5Signature()}";
         } else {
             return parent::getMessage();
         }
