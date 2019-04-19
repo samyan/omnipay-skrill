@@ -19,7 +19,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "samyan/omnipay-skrill": "dev-master"
+        "samyan/omnipay-skrill": "~1.0.0"
     }
 }
 ```
