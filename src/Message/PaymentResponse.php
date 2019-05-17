@@ -73,7 +73,9 @@ class PaymentResponse extends AbstractResponse implements RedirectResponseInterf
      */
     public function getStatus()
     {
-        return (string) $this->data->getHeader('X-Skrill-Status')[0];
+        return count($this->data->getHeader('X-Skrill-Status'))
+            ? (string)$this->data->getHeader('X-Skrill-Status')[0]
+            : null;
     }
 
     /**
