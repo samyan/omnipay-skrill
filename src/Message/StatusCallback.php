@@ -200,7 +200,7 @@ class StatusCallback extends AbstractResponse
      */
     public function getTransactionReference()
     {
-        return $this->data['mb_transaction_id'];
+        return isset($this->data['mb_transaction_id']) ? $this->data['mb_transaction_id'] : null;
     }
 
     /**
