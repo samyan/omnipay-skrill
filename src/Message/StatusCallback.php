@@ -134,7 +134,7 @@ class StatusCallback extends AbstractResponse
      */
     public function getStatus()
     {
-        return (int)$this->data['status'];
+        return isset($this->data['status']) ? (int)$this->data['status'] : null;
     }
 
     /**
